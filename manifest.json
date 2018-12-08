@@ -2,11 +2,12 @@
   "name": "Prankware",
   "version": "1.0",
   "description": "The most dangerous \"malware\" ever created",
+  "permissions": ["storage"],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
-  "page_action": {
+  "browser_action": {
     "default_popup": "popup.html"
   },
   "manifest_version": 2
