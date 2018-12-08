@@ -1,6 +1,7 @@
 chrome.runtime.onInstalled.addListener(function() {
     chrome.storage.sync.set({
-        facebook: false, 
+        applied: false,
+        facebook: false,
         spotify: false,
         youtube: false,
         instagram: false,

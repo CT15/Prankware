@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko" type="text/css">
     <link rel="stylesheet" type="text/css" href="popup.css">
   </head>
   <body>
     <h2>Prankware</h2>
 
-    <p>Select all the sites you want to block and click <em>Apply</em>.</p>
+    <p>Select all the sites you want to block and turn on the <b>PRANK!</b>.</p>
     <div class="ui divider"></div>
 
     <div class="ui three column grid center aligned">
       <div class="row">
         <div class="column">
-            <i class="facebook big icon"></i>
+            <i id="facebook" class="facebook big icon"></i>
         </div>
         <div class="column">
           <i id="spotify" class="spotify big icon"></i>
@@ -49,12 +47,12 @@
       </div>
     </div>
 
-    <button id="apply-button" class="fluid ui button">Apply</button>
+    <button id="applied" class="fluid ui button">PRANK!</button>
 
     <div class="ui divider"></div>
 
     <h3>Want to make this extension more awesome?</h3>
-    <p>You can contribute to this open source project <a href="https://github.com/CT15/Prankware" target="_blank"><em>here</em></a>.</p>
+    <p>You can contribute to this open source project <a href="https://github.com/CT15/Prankware" target="_blank"><b>here</b></a>.</p>
 
     <script src="popup.js"></script>
   </body>

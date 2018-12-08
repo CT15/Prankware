@@ -18,25 +18,36 @@ p {
   text-align: center
 }
 
-em {
+b {
   color: #871818;
 }
 
-.icon.active {
-    color: #871818;
+.icon {
+  color: #7b7e82;
 }
 
 .icon:hover {
+  color: #d1463a;
+}
+
+.icon.active {
   color: #871818;
 }
 
-#apply-button {
+#applied {
+  color: #ffffff;
+  background-color: #7b7e82;
   font-size: 15px;
   margin-top: 25px;
   align-self: center;
 }
 
-#apply-button:hover {
+#applied:hover {
+  color: #ffffff;
+  background-color: #d1463a;
+}
+
+#applied.active {
   color: #ffffff;
   background-color: #871818;
 }
