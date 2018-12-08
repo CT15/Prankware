@@ -1,0 +1,42 @@
+body {
+  padding: 20px 30px 20px 30px;
+}
+
+h2 {
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #871818;
+}
+
+h3 {
+  text-align: center;
+  color: #871818;
+}
+
+p {
+  text-align: center
+}
+
+em {
+  color: #871818;
+}
+
+.icon.active {
+    color: #871818;
+}
+
+.icon:hover {
+  color: #871818;
+}
+
+#apply-button {
+  font-size: 15px;
+  margin-top: 25px;
+  align-self: center;
+}
+
+#apply-button:hover {
+  color: #ffffff;
+  background-color: #871818;
+}
