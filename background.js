@@ -20,15 +20,15 @@ const iconUrlMap = {
   spotify: "*://www.spotify.com/*",
   youtube: "*://www.youtube.com/*",
   instagram: "*://www.instagram.com/*",
-  github: "*://www.github.com/*",
+  github: "*://github.com/*",
   reddit: "*://www.reddit.com/*",
   twitter: "*://twitter.com/*",
-  twitch: "*://www.twitch.com/*",
+  twitch: "*://www.twitch.tv/*",
   pinterest: "*://www.pinterest.com/*"
 }
 
 function redirectRequest(details) {
-    const host = "https://github.com/CT15/Prankware";
+    const host = "https://en.wikipedia.org/wiki/Denial-of-service_attack";
     return { redirectUrl: host };
 }
 

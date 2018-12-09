@@ -10,10 +10,10 @@
                   "*://www.spotify.com/*",
                   "*://www.youtube.com/*",
                   "*://www.instagram.com/*",
-                  "*://www.github.com/*",
+                  "*://github.com/*",
                   "*://www.reddit.com/*",
                   "*://twitter.com/*",
-                  "*://www.twitch.com/*",
+                  "*://www.twitch.tv/*",
                   "*://www.pinterest.com/*"
                 ],
   "background": {
