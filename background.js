@@ -35,7 +35,7 @@ function redirectRequest(details) {
 var urls = [];
 chrome.storage.onChanged.addListener(function(changes, namespace) {
   for(key in changes) {
-    if(key == 'applied' && urls.length > 0) {
+    if(key == 'applied' && changes[key].newValue) {
       chrome.webRequest.onBeforeRequest.addListener(
           redirectRequest,
           { urls: urls,
@@ -52,7 +52,7 @@ chrome.storage.onChanged.addListener(function(changes, namespace) {
           },
           ["blocking"]
       );
-    } else if(key == 'applied' && urls.length <= 0) {
+    } else if(key == 'applied' && !changes[key].newValue) {
       chrome.webRequest.onBeforeRequest.removeListener(redirectRequest);
     } else {
       urls.push(iconUrlMap[key]);
