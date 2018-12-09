@@ -2,10 +2,23 @@
   "name": "Prankware",
   "version": "1.0",
   "description": "The most dangerous \"malware\" ever created",
-  "permissions": ["storage"],
+  "permissions": [
+                  "storage",
+                  "webRequest",
+                  "webRequestBlocking",
+                  "*://www.facebook.com/*",
+                  "*://www.spotify.com/*",
+                  "*://www.youtube.com/*",
+                  "*://www.instagram.com/*",
+                  "*://www.github.com/*",
+                  "*://www.reddit.com/*",
+                  "*://twitter.com/*",
+                  "*://www.twitch.com/*",
+                  "*://www.pinterest.com/*"
+                ],
   "background": {
     "scripts": ["background.js"],
-    "persistent": false
+    "persistent": true
   },
   "browser_action": {
     "default_popup": "popup.html",
