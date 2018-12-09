@@ -29,10 +29,15 @@ b {
 
 .icon:hover {
   color: #d1463a;
+  transform: scale(1.5, 1.5);
 }
 
 .icon.active {
   color: #871818;
+}
+
+.unclickable {
+  pointer-events: none;
 }
 
 #applied {
@@ -46,6 +51,7 @@ b {
 #applied:hover {
   color: #ffffff;
   background-color: #d1463a;
+  transform: scale(1.05, 1.05);
 }
 
 #applied.active {
