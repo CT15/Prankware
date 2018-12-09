@@ -1,7 +1,8 @@
 {
   "name": "Prankware",
+  "short_name": "Pw",
   "version": "1.0",
-  "description": "The most dangerous \"malware\" ever created",
+  "description": "Not an actual malware",
   "permissions": [
                   "storage",
                   "webRequest",
