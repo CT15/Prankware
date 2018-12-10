@@ -35,7 +35,8 @@ function redirectRequest(details) {
 var urls = [];
 chrome.storage.onChanged.addListener(function(changes, namespace) {
   for(key in changes) {
-    if(key == 'applied' && changes[key].newValue) {
+    const newValue = changes[key].newValue;
+    if(key == 'applied' && newValue) {
       chrome.webRequest.onBeforeRequest.addListener(
           redirectRequest,
           { urls: urls,
@@ -52,10 +53,12 @@ chrome.storage.onChanged.addListener(function(changes, namespace) {
           },
           ["blocking"]
       );
-    } else if(key == 'applied' && !changes[key].newValue) {
+    } else if(key == 'applied' && !newValue) {
       chrome.webRequest.onBeforeRequest.removeListener(redirectRequest);
-    } else {
+    } else if (newValue) {
       urls.push(iconUrlMap[key]);
+    } else {
+      urls.splice(urls.indexOf(iconUrlMap[key]), 1);
     }
   }
 });
